@@ -4,4 +4,8 @@ module.exports = {
     tabWidth: 4,
     semi: true,
     singleQuote: true,
+    overrides: [
+        { files: '*.ts', options: { parser: 'typescript' } },
+        { files: '*.json', options: { tabWidth: 2 } },
+    ],
 };
